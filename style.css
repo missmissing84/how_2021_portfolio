@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;1,500&display=swap');
+@media screen and (max-width: 500px) {
+
+
+.column{
+    width: 100%;
+  }
+}
+
+*{
+   margin:  0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+
+}
+.max-width{
+	max-width: 1300px;
+	padding: 0 80px;
+	margin: auto;
+}
+
+/* navbar styling */
+.navbar{
+	position: fixed;
+	width: 100%;
+	padding: 15px 0;
+	background: deeppink;
+	font-family: 'Ubuntu', sans-serif;
+}
+.navbar .sticky{
+	padding: 30px 0;
+	background: white;
+}
+.navbar .max-width{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.navbar .logo a{
+	color: black;
+	font-size: 35px;
+	font-weight: 400;
+	font-style: italic;
+}
+.navbar .logo :hover{
+	color: white;
+}
+.navbar .menu li{
+	list-style: none;
+	display: inline-block;
+}
+.navbar .menu li a{
+	color: black;
+	font-size: 18px;
+	font-weight: 500;
+	margin-left: 25px;
+}
+/* Banner section styling */
+.home{
+	display: flex;
+	background-image: url('image/sobre.png');
+	background-repeat: no-repeat;
+  height: 130vh;
+  background-position: right;
+  color: black;
+  min-height: 500px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.home .max-width{
+	margin: auto 0 auto 40px;
+}
+.home .home-content .text-1{
+	font-size: 30px;
+	font-style: italic;
+}
+.home .home-content .text-2{
+  font-size: 50px;
+  font-weight: 600;
+  margin-left: 20px;
+  font-style: italic;	
+  color: black;
+}
+.home .home-content .text-3{
+	font-size: 30px;
+	margin: 5px 0;
+	font-style: italic;
+}
+.row .column{
+  float: right;
+  width: 50%;
+}
+.content{
+  clear: both;
+  display: table;
+}
+.main{
+	font-size: 15px;
+	font-family: 'Ubuntu', sans-serif;
+	font-style: italic;
+	text-align: center;
+}
+.navbar .menu :hover{
+	color: white;
+}
+
+/* Bonecas Page Styling */
+
+.pics .column{
+  float: right;
+  width: 25%;
+}
+.content{
+  clear: both;
+  display: table;
+}
+
+/* Sobre Page Styling */
+.about{
+	font-size: 30px;
+	font-family: 'Ubuntu', sans-serif;
+	font-style: none;
+	text-align: center;
+}
+
+/* Contato Page Styling */
+.contact{
+	font-size: 30px;
+	font-family: 'Ubuntu', sans-serif;
+	font-style: none;
+	text-align: center;
+}
+
+/* Forms Styling */
+.forms{
+	font-size: 25px;
+	font-family: 'Ubuntu', sans-serif;
+	font-style: none;
+	text-align: center;
+}
+/* footer Styling */
+.footer{
+	font-size: 15px;
+	font-family: 'Ubuntu', sans-serif;
+	font-style: italic;
+	text-align: center;
+}
+
+/* Coração Pulsando */
+
+.content-coracao{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  margin: 50px auto;
+  -webkit-animation: pulsa 1s linear 0s infinite;
+}
+@keyframes pulsa{
+  0%{
+    transform: scale(0.9) rotate(0deg);
+  }
+  50%{
+    transform: scale(1) rotate(0deg);
+  }
+  70%{
+    transform: scale(1.1) rotate(0deg);
+  }
+  80%{
+    transform: scale(1.2) rotate(0deg);
+  }
+  100%{
+    transform: scale(1) rotate(0deg);
+  }
+}
+.square{
+  transform: rotate(45deg);
+  width: 50px;
+  height: 50px;
+  background: #e71940;
+  position: absolute;
+  top: 30px;
+}
+.circle:after,
+.circle:before{
+  content: "";
+  position: absolute;
+  width: 54px;
+  height: 55px;
+  border-radius: 50%;
+  background: #e71940;
+}
+.circle:after{
+  left: 5px;
+  top: 6px;
+}
+.circle:before{
+  right: 5px;
+  top: 6px;
+}
